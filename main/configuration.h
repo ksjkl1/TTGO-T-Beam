@@ -155,3 +155,4 @@ void ttn_register(void (*callback)(uint8_t message));
 #define GPS_POWER_CTRL_CH     3
 #define LORA_POWER_CTRL_CH    2
 #define PMU_IRQ               35
+

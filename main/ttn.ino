@@ -430,3 +430,4 @@ void ttn_send(uint8_t * data, uint8_t data_size, uint8_t port, bool confirmed){
 void ttn_loop() {
     os_runloop_once();
 }
+

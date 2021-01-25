@@ -150,3 +150,4 @@ void screen_loop() {
     display->drawLogBuffer(0, SCREEN_HEADER_HEIGHT);
     display->display();
 }
+

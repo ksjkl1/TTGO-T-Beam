@@ -42,3 +42,4 @@ void sleep_seconds(uint32_t seconds) {
 void sleep_forever() {
     esp_deep_sleep_start();
 }
+
