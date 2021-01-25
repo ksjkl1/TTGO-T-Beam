@@ -75,4 +75,4 @@ I also developed [The Things Network Tracker (TTN-Tracker)](https://github.com/k
 
 ![T-BEAM-Rev1-01](img/T-BEAM-Rev1-01.jpg)
 
-![T-BEAM-Rev1-02](img/T-BEAM-Rev1-02.jpg)
+![T-BEAM-Rev1-02](img/T-BEAM-Rev1-02.jpg) 
