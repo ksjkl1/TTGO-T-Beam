@@ -19,32 +19,6 @@
 #include "rom/rtc.h"
 #include <TinyGPS++.h>
 #include <Wire.h>
-#include "WiFi.h" // ESP32 WiFi include
-#include "WiFiConfig.h" // My WiFi configuration.
- 
-void ConnectToWiFi()
-{
- 
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(SSID, WiFiPassword);
-  Serial.print("Connecting to "); Serial.println(SSID);
- 
-  uint8_t i = 0;
-  while (WiFi.status() != WL_CONNECTED)
-  {
-    Serial.print('.');
-    delay(500);
- 
-    if ((++i % 16) == 0)
-    {
-      Serial.println(F(" still trying to connect"));
-    }
-  }
- 
-  Serial.print(F("Connected. My IP address is: "));
-  Serial.println(WiFi.localIP());
-}
-
 
 #include "axp20x.h"
 AXP20X_Class axp;
@@ -333,8 +307,6 @@ void setup() {
 #ifdef DEBUG_PORT
   DEBUG_PORT.begin(SERIAL_BAUD);
 #endif
-
-  ConnectToWiFi();
 
   initDeepSleep();
 
